@@ -1,0 +1,11 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: xhtml.test.core
+Bundle-Version: 1.0.0
+Bundle-Name: XHTML-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: xhtml.test.core.xhtml-core;singleton=true
+Nuxeo-Component: OSGI-INF/exportauditxlsandattachtoemailoperation-operation-contrib.xml,
+ OSGI-INF/actions-contrib.xml,
+

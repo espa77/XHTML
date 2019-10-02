@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="xhtml.test.core.actions">
+
+    <require>org.nuxeo.ecm.platform.actions</require>
+
+    <extension target="org.nuxeo.ecm.platform.actions.ActionService" point="actions">
+
+        <action icon="/icons/email.png" id="exportPerEmail" label="Excel Export (per email)" order="200" type="link">
+            <category>CONTENT_VIEW_ACTIONS</category>
+            <properties>
+                <property name="include">/action/content_view_export_xls_audit.xhtml</property>
+                <property name="addForm">true</property>
+                <property name="useAjaxForm">true</property>
+                <property name="ajaxSupport">true</property>
+                <property name="link">#{operationActionBean.doOperation('Audit.ExportXlsAndAttachToEmail')}</property>
+            </properties>
+            <filter-id>contentViewShowCSVExport</filter-id>
+        </action>
+
+    </extension>
+</component>
